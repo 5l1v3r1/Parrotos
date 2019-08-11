@@ -14,4 +14,4 @@ r = requests.get("https://gist.githubusercontent.com/rickdaalhuizen90/d1df7f6042
 with open('.bashrc', 'wb') as f:
 	f.write(q.encode())
 	f.write(r.content)
-os.system('sudo mv .bashrc ~')
+os.system('mv .bashrc ~')
