@@ -1,0 +1,4 @@
+# Parrotos
+Parrotos' Bashrc
+
+# Usage
