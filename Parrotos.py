@@ -2,8 +2,11 @@
 # Code By GogoZin#
 ##################
 import os
-os.system("sudo apt-get install figlet &&pip3 install requests")
-
+sss = str(input("What's System You Using Now ? (termux/linux/debian/kali) : "))
+if sss =='termux':
+	os.system("apt install figlet &&pkg install python &&pip3 install requests")
+else:
+	os.system("sudo apt-get install figlet python3 &&pip3 install requests")
 import requests
 word = str(input("Messege You Want To Show On Terminal : "))
 q = "figlet -f slant " + str(word) + "\r\n"
