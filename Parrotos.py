@@ -14,4 +14,7 @@ r = requests.get("https://gist.githubusercontent.com/rickdaalhuizen90/d1df7f6042
 with open('.bashrc', 'wb') as f:
 	f.write(q.encode())
 	f.write(r.content)
-os.system('mv .bashrc ~')
+if sss =='termux':
+	os.system('mv .bashrc ~')
+else:
+	os.system('sudo mv .bashrc ~')
